@@ -301,6 +301,16 @@ a {
     right: 0;
 }
 
+.teacherCard__photo.none {
+    background: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
 @media (max-width: 1200px) {
     .weekDay__wrapper {
         flex: 0 0 50%;
