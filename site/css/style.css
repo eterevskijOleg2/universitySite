@@ -38,7 +38,7 @@ a {
 .container {
     margin: 0 auto;
     max-width: 1170px;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 
 .weekDay__wrapper {
@@ -194,13 +194,100 @@ a {
     margin-bottom: 20px;
 }
 
-/* .UAinput {
-    display: none;
-} */
-
-.cum {
-    position: absolute;
+.teachers__title {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2b2b;
 }
+
+.teacherCard {
+    padding: 20px;
+    background: #EDEDED;
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+}
+
+.teacherCard__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.teacherCard {
+    display: flex;
+}
+
+.teacherCard__right {
+    margin-left: 18px;
+}
+
+.teacherCard__right__contactItem {
+    width: 100%;
+    display: inline-block;
+}
+
+.teacherCard__right__contactItem+.teacherCard__right__contactItem {
+    margin-top: 2px;
+}
+
+.teacherCard__right__subject__wrapper {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.teacherCard__right__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+.teacherCard__right__subject {
+    padding: 3px 6px;
+    background: #d9d9d9;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.teacherCard__right__subject+.teacherCard__right__subject {
+    margin-left: 10px;
+}
+
+.teacherCard__right__contactItem {
+    color: #2b2b2b;
+}
+
+.teacherCard__right__contactItem+.teacherCard__right__contactItem {
+    margin-top: 4px;
+}
+
+.teacherCard__right__contactItem a {
+    color: #000;
+    font-weight: 500;
+}
+
+.teachersWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+
+.teacherCard__wrapper {
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 
 @media (max-width: 1200px) {
     .weekDay__wrapper {
@@ -215,6 +302,23 @@ a {
     .currentWeek {
         margin-left: 10px;
     }
+
+}
+
+@media (max-width: 1024px) {
+    .teacherCard__wrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    /* .teacherCard {
+        width: 80%;
+        margin: 0 auto;
+    } */
+
+    .container {
+        margin: 0 20px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -223,6 +327,7 @@ a {
         max-width: 100%;
         padding: 0 180px;
     }
+
 }
 
 @media (max-width: 670px) {
@@ -238,6 +343,10 @@ a {
 
     .toggleWeekBtn {
         display: block;
+    }
+
+    .container {
+        margin: 0 10px;
     }
 
 }
