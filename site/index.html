@@ -1,0 +1,1151 @@
+<!-- browser-sync start --server --files "php/*.php,css/*.css,js/*.js,html/*.html,*.*" -->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Расписание</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <ul class="menu">
+        <li class="menu__item"><a href="#">Расписание</a></li>
+        <li class="menu__item"><a href="#">Преподаватели</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="topString">
+      <p class="currentWeek">Текущая неделя <span class="currentWeek__date">(12.09 - 16.09) - </span><span
+          class="currentWeek__upOrDown" id="weekTypeText">верхняя</span> </p>
+      <p id="toggleString" class="toggleWeekString"></p>
+      <button id="toggleWeekBtn" class="toggleWeekBtn"></button>
+    </div>
+
+    <div class="week" id="topWeek">
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Понедельник</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Вторник</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Среда</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Четверг</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Пятница</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Блок нижней недели начинается отсюда -->
+
+    <div class="week" id="downWeek">
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Понедельник нижний</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Вторник нижний</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Среда нижний</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Четверг нижний</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="weekDay__wrapper">
+
+        <div class="weekDay">
+          <p class="weekDay__day">Пятница нижний</p>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">1</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">2</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">3</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">4</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+
+          <div class="weekDay__table row">
+
+            <div class="weekDay__table__numAndTime">
+              <p class="weekDay__table__num">5</p>
+              <p class="weekDay__table__time">8:15-9:50</p>
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+              <p class="weekDay__table__name">Базы Данных</p>
+              <p class="weekDay__table__teacher">Ромашка А. О.</p>
+            </div>
+
+            <div class="weekDay__table__auditorium">
+              <p class="weekDay__table__auditoriumText">123</p>
+            </div>
+          </div>
+
+          <div class="weekDay__table row dayFooter">
+
+            <div class="weekDay__table__numAndTime">
+
+            </div>
+
+            <div class="weekDay__table__nameAndTeacher">
+
+            </div>
+
+            <div class="weekDay__table__auditorium">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script>let isUpWeek = true;</script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
