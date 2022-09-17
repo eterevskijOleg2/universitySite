@@ -240,6 +240,7 @@ a {
 .teacherCard__right__subject__wrapper {
     display: flex;
     margin-bottom: 12px;
+    flex-wrap: wrap;
 }
 
 .teacherCard__right__name {
@@ -255,10 +256,8 @@ a {
     border-radius: 2px;
     font-weight: 500;
     font-size: 15px;
-}
-
-.teacherCard__right__subject+.teacherCard__right__subject {
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4px;
 }
 
 .teacherCard__right__contactItem {
