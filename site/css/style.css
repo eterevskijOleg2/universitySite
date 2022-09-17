@@ -98,6 +98,10 @@ a {
     margin-bottom: 33px;
 }
 
+.weekDay__table {
+    position: relative;
+}
+
 .weekDay__table__auditoriumText {
     font-weight: 500;
     font-size: 16px;
@@ -287,7 +291,15 @@ a {
     padding-right: 15px;
 }
 
-
+.weekDay__table.current:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff9c09;
+    border-radius: 50%;
+    right: 0;
+}
 
 @media (max-width: 1200px) {
     .weekDay__wrapper {
