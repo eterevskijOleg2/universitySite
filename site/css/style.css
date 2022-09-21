@@ -61,7 +61,7 @@ a {
     margin-left: -15px;
     margin-right: -15px;
     row-gap: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .currentWeek {
@@ -105,7 +105,6 @@ a {
 .weekDay__table__auditoriumText {
     font-weight: 500;
     font-size: 16px;
-
 }
 
 .weekDay__table__name {
@@ -140,6 +139,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 6px 5px;
+    max-height: 42px;
 }
 
 .weekDay__table__nameAndTeacher {
@@ -196,6 +198,7 @@ a {
     margin: 0 auto;
     font-family: Inter;
     margin-bottom: 20px;
+    max-width: 370px;
 }
 
 .teachers__title {
@@ -258,6 +261,7 @@ a {
     font-size: 15px;
     margin-right: 10px;
     margin-bottom: 4px;
+    white-space: nowrap !important
 }
 
 .teacherCard__right__contactItem {
@@ -280,6 +284,7 @@ a {
     margin-right: -15px;
     row-gap: 30px;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .teacherCard__wrapper {
@@ -320,8 +325,26 @@ a {
         padding: 10px;
     }
 
-    .currentWeek {
-        margin-left: 10px;
+    .container {
+        margin: 0 20px;
+    }
+
+    .weekDay__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weekDay {
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .week> :nth-child(odd) {
+        justify-content: flex-end;
+    }
+
+    .week> :nth-child(even) {
+        justify-content: flex-start;
     }
 
 }
@@ -337,16 +360,37 @@ a {
         margin: 0 auto;
     } */
 
-    .container {
-        margin: 0 20px;
+    .teachersWrapper {
+        row-gap: 15px;
     }
+}
+
+@media (max-width: 770px) {
+
+    .weekDay__wrapper {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .week {
+        row-gap: 20px !important;
+    }
+
 }
 
 @media (max-width: 700px) {
     .weekDay__wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0 180px;
+        /* padding: 0 180px; */
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+
+    .weekDay__wrapper {
+        justify-content: center !important;
     }
 
 }
@@ -355,7 +399,6 @@ a {
     .weekDay__wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0 150px;
     }
 
     .toggleWeekString {
@@ -370,30 +413,47 @@ a {
         margin: 0 10px;
     }
 
+    .teacherCard {
+        padding: 10px;
+    }
+
+    .teacherCard__photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .teacherCard__right {
+        margin-left: 15px;
+    }
+
+    .teacherCard__photo p {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 600px) {
     .weekDay__wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0 120px;
+        /* padding: 0 120px; */
     }
 }
 
 @media (max-width: 550px) {
     .weekDay__wrapper {
-        padding: 0 70px;
+        /* padding: 0 70px; */
     }
 }
 
 @media (max-width: 500px) {
     .weekDay__wrapper {
-        padding: 0 50px;
+        /* padding: 0 50px; */
     }
 }
 
 @media (max-width: 400px) {
     .weekDay__wrapper {
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 }
