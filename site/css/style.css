@@ -25,6 +25,8 @@ a {
     display: flex;
     align-items: center;
     height: 100%;
+    list-style: none;
+
 }
 
 .menu__item {
@@ -39,6 +41,7 @@ a {
     margin: 0 auto;
     max-width: 1170px;
     /* overflow-x: hidden !important; */
+    overflow-x: hidden;
 }
 
 .weekDay__wrapper {
@@ -269,7 +272,7 @@ a {
 }
 
 .teacherCard__right__contactItem+.teacherCard__right__contactItem {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 .teacherCard__right__contactItem a {
@@ -322,7 +325,7 @@ a {
     }
 
     .header {
-        padding: 10px;
+        padding: 10px 0;
     }
 
     .container {
@@ -447,13 +450,27 @@ a {
 }
 
 @media (max-width: 500px) {
-    .weekDay__wrapper {
-        /* padding: 0 50px; */
-    }
-}
 
-@media (max-width: 400px) {
-    .weekDay__wrapper {
-        /* padding: 0 20px; */
+    .header {
+        background: #d9d9d9;
+        /* padding: 10px 0 !important; */
     }
+
+    .header .container {
+        height: 50px;
+        margin: 0 !important;
+    }
+
+    .menu {
+        padding: 0 10px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .menu::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
 }
